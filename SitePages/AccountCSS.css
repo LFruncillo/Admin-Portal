@@ -1,3 +1,9 @@
-.LoginForm {
-    align-content: center;
+html {
+    overflow: hidden;
+}
+
+.LoginBG {
+    background: rgba(black);
+    width: 50%;
+    height: 50%;
 }

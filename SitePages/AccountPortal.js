@@ -52,11 +52,9 @@ function addTextTXT()
 }
 
 function sendMessage(){
-  if(document.getElementById('MessageContent').value == 'What is this?'){
+  if(document.getElementById('MessageContent').value == 'What is this?')
    alert('This is your admin portal.'); 
-   } else {
-     alert('Invalid');
-   }
-  }
-
-
+  if (document.getElementById('MessageContent').value == 'Is this live?'){
+    alert('No'); 
+  } else {
+     alert('Invalid'); }}
