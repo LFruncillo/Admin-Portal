@@ -1,5 +1,5 @@
 function checkPin(){
-  if(document.getElementById('pin').value == '1010' && document.getElementById('username').value == 'Admin'){
+  if(document.getElementById('password').value == '$bruhmoment$' && document.getElementById('username').value == 'Admin'){
   let userName = document.getElementById('username').value;
   alert('Correct Info! Welcome, ' + userName); 
   location.href="accountportal.html";
@@ -7,6 +7,15 @@ function checkPin(){
   alert('Wrong Info!');
   return false;
   }}
+
+  function TogglePin() {
+    var x = document.getElementById("password") && document.getElementById("regpassword");
+    if (x.type === "password") {
+      x.type = "pin";
+    } else {
+      x.type = "password";
+    }
+  }
 
 function HideAllElements()
 {
