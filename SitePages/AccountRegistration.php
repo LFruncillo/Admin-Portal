@@ -19,6 +19,8 @@
             <input type="submit" name="save" value="Register">
         </form>
 
+        <a href="LoginScreen.php">Already have an account? Login here!</a>
+
     </body>
         <!-- JS, Popper.js, and jQuery -->
         <link rel="script" href="https://code.jquery.com/jquery.min.js">

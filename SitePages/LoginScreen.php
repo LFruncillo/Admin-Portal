@@ -18,6 +18,8 @@
             <input type="submit" name="submit" value="Login">
         </form>
 
+        <a href="AccountRegistration.php">Don't have an account? Register here!</a>
+
 
         
     </body>
