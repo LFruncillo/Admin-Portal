@@ -1,14 +1,8 @@
-function checkPin(){
-  if(document.getElementById('password').value == '$bruhmoment$' && document.getElementById('username').value == 'Admin'){
-  let userName = document.getElementById('username').value;
-  alert('Correct Info! Welcome, ' + userName); 
-  location.href="accountportal.html";
-  } else {
-  alert('Wrong Info!');
-  return false;
-  }}
+  function LoginPage() {
+    location.href="LoginScreen.html";
+  }
 
-  function TogglePin() {
+  function TogglePassword() {
     var x = document.getElementById("password") && document.getElementById("regpassword");
     if (x.type === "password") {
       x.type = "pin";

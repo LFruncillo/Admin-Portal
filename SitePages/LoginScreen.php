@@ -11,19 +11,12 @@
 
     </head>
     <body>     
-        <div id="LoginForm" class="Login-Form">
+        <form action="AccountLogin.php" method="post">
             <p>Admin Login</p>
-            <input id="username" class="user-name" type="text" value="" placeholder="Username" name="username" required>
-            <input id="password" class="pass-word" type="password" value="" placeholder="Password" name="Password" required>
-            <button id="ConfirmLogin" type="submit" value="Login" class="Confirm-Login btn btn-dark" onclick="checkPin()">SUBMIT</button>
-        </div>
-
-        <div id="RegisterForm" class="Register-Form">
-            <p>Admin Register</p>
-            <input id="regusername" class="reg-username" type="text" placeholder="Username" name="regusername" required>
-            <input id="regpassword" class="reg-password" type="password" placeholder="Password" name="regpassword" required>
-            <button id="ConfirmRegister" type="submit" value="Add Record" class="Confirm-Register btn btn-dark" onclick="Register()">SUBMIT</button>
-        </div>
+            <input id="username" class="user-name" type="text" value="" placeholder="Username" name="logusername" required>
+            <input id="password" class="pass-word" type="password" value="" placeholder="Password" name="logpassword" required>
+            <input type="submit" name="submit" value="Login">
+        </form>
 
 
         
