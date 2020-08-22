@@ -15,7 +15,7 @@
             <p>Admin Login</p>
             <input id="username" class="user-name" type="text" value="" placeholder="Username" name="logusername" required>
             <input id="password" class="pass-word" type="password" value="" placeholder="Password" name="logpassword" required>
-            <input type="submit" name="submit" value="Login">
+            <input class="btn btn-dark" type="submit" name="submit" value="Login">
         </form>
 
         <a href="AccountRegistration.php">Don't have an account? Register here!</a>

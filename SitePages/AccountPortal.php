@@ -28,16 +28,9 @@
             <input type="text" name="name" value="" placeholder="File Name">
             <input type="submit" onClick="addTextHTML();" value="Save As HTML">
             <input type="submit" onClick="addTexttxt();" value="Save As TXT">
-            
         </form>
 
-        <form id="CreateMessages" name="addmessage">
-            <input id="MessageContent" type="text" name="Message" value="" placeholder="Message...">
-            <button id="ConfirmMessage" type="submit" value="submit" class="Confirm-Login btn btn-dark" onclick="sendMessage()">SUBMIT</button>
-        </form>
-
-        <iframe src="https://titanembeds.com/embed/744735931688550472" height="600" width="800" frameborder="0"></iframe>
-
+        <a href="ContactForm.php">Need some assistance? Contact us here!</a>
 
     </body>
     <!-- JS, Popper.js, and jQuery -->

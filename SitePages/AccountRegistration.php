@@ -16,7 +16,7 @@
         <form  action="AccountAdd.php" method="post">
             <input id="regusername" class="reg-username" type="text" placeholder="Username" name="regusername" required></input>
             <input id="regpassword" class="reg-password" type="text" placeholder="Password" name="regpassword" required></input>
-            <input type="submit" name="save" value="Register">
+            <input class="btn btn-dark" type="submit" name="save" value="Register">
         </form>
 
         <a href="LoginScreen.php">Already have an account? Login here!</a>
