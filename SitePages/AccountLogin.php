@@ -1,5 +1,5 @@
 <?php
-include_once 'databaselogin.php'; 
+include_once 'database.php'; 
 if(isset($_POST['submit']))
 {
 
