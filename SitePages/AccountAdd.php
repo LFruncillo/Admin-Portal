@@ -1,9 +1,9 @@
 <?php
 include_once 'database.php';
-if(isset($_POST['save']))
+if(isset($_POST['save'])) 
 {	 
-	 $username = $_POST['regusername'];
-	 $password = password_hash($_POST['regpassword'], PASSWORD_BCRYPT);
+	 $username = mysqli_real_escape_string($conn, $_POST["regusername"]); 
+	 $password = password_hash($_POST['regpassword'], PASSWORD_BCRYPT); 
      
 	 $sql = "INSERT INTO accountinfo (username,password)
      VALUES ('$username','$password')";

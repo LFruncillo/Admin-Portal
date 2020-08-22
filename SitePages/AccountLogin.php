@@ -1,14 +1,15 @@
 <?php
-include_once 'databaselogin.php';
-if(isset($_POST['submit'])) {
+include_once 'databaselogin.php'; 
+if(isset($_POST['submit']))
+{
 
-if(empty($_POST["logusername"]) || empty($_POST["logpassword"]))
+if(empty($_POST["logusername"]) || empty($_POST["logpassword"])) 
 	{
-		echo 'Both fields are required.';
+		echo 'Both fields are required.'; 
 	} else {
 		$username = mysqli_real_escape_string($conn, $_POST["logusername"]);
 		$password = mysqli_real_escape_string($conn, $_POST["logpassword"]);
-		$query = "SELECT * FROM accountinfo WHERE username = '$username'";
+		$query = "SELECT * FROM accountinfo WHERE username = '$username'"; 
 		$result = mysqli_query($conn, $query);
 		if(mysqli_num_rows($result) > 0)
 		{
@@ -16,7 +17,7 @@ if(empty($_POST["logusername"]) || empty($_POST["logpassword"]))
 			{
 				if(password_verify($password, $row["password"]))
 				{
-					$_SESSION["username"] = $username;
+					$_SESSION["username"] = $username; 
 					echo "Logged in";
 					header("location:AccountPortal.html");
 				}
