@@ -4,9 +4,11 @@ if(isset($_POST['save']))
 {	 
 	 $username = mysqli_real_escape_string($conn, $_POST["regusername"]); 
 	 $password = password_hash($_POST['regpassword'], PASSWORD_BCRYPT); 
+	 $email = mysqli_real_escape_string($conn, $_POST["regemail"]); 
+	 $creditamount = '$0';
      
-	 $sql = "INSERT INTO accountinfo (username,password)
-     VALUES ('$username','$password')";
+	 $sql = "INSERT INTO accountinfo (username,password,email,credit)
+     VALUES ('$username','$password','$email','$creditamount')";
      
 	 if (mysqli_query($conn, $sql)) {
 		echo "New record created successfully !";

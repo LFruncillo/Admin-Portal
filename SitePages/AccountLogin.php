@@ -19,7 +19,7 @@ if(empty($_POST["logusername"]) || empty($_POST["logpassword"]))
 				{
 					$_SESSION["username"] = $username; 
 					echo "Logged in";
-					header("location:AccountPortal.html");
+					header("location:AccountPortal.php");
 				}
 				else
 				{

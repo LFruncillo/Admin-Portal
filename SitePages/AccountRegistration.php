@@ -16,6 +16,7 @@
         <form  action="AccountAdd.php" method="post">
             <input id="regusername" class="reg-username" type="text" placeholder="Username" name="regusername" required></input>
             <input id="regpassword" class="reg-password" type="text" placeholder="Password" name="regpassword" required></input>
+            <input id="regemail" class="reg-email" type="text" placeholder="Email" name="regemail" required></input>
             <input class="btn btn-dark" type="submit" name="save" value="Register">
         </form>
 
