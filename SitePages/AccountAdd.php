@@ -5,7 +5,7 @@ if(isset($_POST['save']))
 	 $username = mysqli_real_escape_string($conn, $_POST["regusername"]); 
 	 $password = password_hash($_POST['regpassword'], PASSWORD_BCRYPT); 
 	 $email = mysqli_real_escape_string($conn, $_POST["regemail"]); 
-	 $creditamount = '$0';
+	 $creditamount = '0';
      
 	 $sql = "INSERT INTO accountinfo (username,password,email,credit)
      VALUES ('$username','$password','$email','$creditamount')";

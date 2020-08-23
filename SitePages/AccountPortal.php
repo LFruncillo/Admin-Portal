@@ -29,7 +29,8 @@
             <input type="submit" onClick="addTextHTML();" value="Save As HTML">
             <input type="submit" onClick="addTexttxt();" value="Save As TXT">
         </form>
-
+        <a href="RequestForm.php">Request Payment</a>
+        <br>
         <a href="ContactForm.php">Need some assistance? Contact us here!</a>
 
     </body>
