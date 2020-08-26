@@ -11,7 +11,7 @@ if(isset($_POST['pay']))
      
 	 if (mysqli_query($conn, $pay)) {
 		echo "Pay Sent!";
-		header("Location: AccountPortal.php"); /* Redirect browser */
+		header("Location: AdminAccountPortal.php"); /* Redirect browser */
   		exit();
 	 } else {
 		echo "Error: " . $pay . "<br>" . mysqli_error($conn);

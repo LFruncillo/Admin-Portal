@@ -6,11 +6,11 @@ if(isset($_POST['send']))
 	 $email = mysqli_real_escape_string($conn, $_POST["sendemail"]); 
      $amount = mysqli_real_escape_string($conn, $_POST["sendcredit"]); 
      
-     $send = "UPDATE accountinfo SET credit = '$amount' WHERE username = '$username'";
+     $send = "UPDATE accountinfo SET credit = credit + $amount WHERE username = '$username'";
      
 	 if (mysqli_query($conn, $send)) {
 		echo "Request Sent!";
-		header("Location: AccountPortal.php"); /* Redirect browser */
+		header("Location: AdminAccountPortal.php"); /* Redirect browser */
   		exit();
 	 } else {
 		echo "Error: " . $send . "<br>" . mysqli_error($conn);

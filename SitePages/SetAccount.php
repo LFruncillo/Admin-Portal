@@ -9,7 +9,7 @@ if(isset($_POST['set']))
      
 	 if (mysqli_query($conn, $change)) {
 		echo "Pay Sent!";
-		header("Location: ControlPanel.php"); /* Redirect browser */
+		header("Location: AdminAccountPortal.php"); /* Redirect browser */
   		exit();
 	 } else {
 		echo "Error: " . $change . "<br>" . mysqli_error($conn);

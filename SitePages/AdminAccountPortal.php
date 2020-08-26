@@ -16,16 +16,13 @@
             
     </head>
     <body>
-        <div class="Options-Dropdown">
-            <button class="btn btn-secondary btn-dark btn-secondary dropdown-toggle" type="button" id="OptionsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Options
-            </button>
-            <div class="dropdown-menu" aria-labelledby="OptionsMenuButton">
-                <a class="dropdown-item" onclick="ToggleDiv('CreateNotes')" href="#">Create Note</a>
-                <a class="dropdown-item" onclick="ToggleDiv('CreateMessages')" href="#">Create Message</a>
-            </div>
-        </div>
-        
+    <br>
+        <a href="AdminPayConfirm.php">Send Payment</a>
+        <br>
+        <a href="GiveForm.php">Send Credits</a>
+        <br>
+        <a href="ControlPanel.php">Control Panel</a>
+        <br>
         <form id="CreateNotes" name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
 
             <textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea>
@@ -33,13 +30,6 @@
             <input type="text" name="name" value="" placeholder="File Name">
             <input type="submit" onClick="addTextHTML();" value="Save As HTML">
             <input type="submit" onClick="addTexttxt();" value="Save As TXT">
-        </form>
-        <a href="RequestForm.php">Request Payment</a>
-        <br>
-        <a href="ContactForm.php">Need some assistance? Contact us here!</a>
-        <br>
-        <form action="AdminAccess.php" method="post">
-            <input class="btn btn-dark" type="submit" name="Go" value="Control Panel">
         </form>
 
     </body>

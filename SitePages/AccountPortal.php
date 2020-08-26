@@ -15,17 +15,12 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
             
     </head>
-    <body>
-        <div class="Options-Dropdown">
-            <button class="btn btn-secondary btn-dark btn-secondary dropdown-toggle" type="button" id="OptionsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Options
-            </button>
-            <div class="dropdown-menu" aria-labelledby="OptionsMenuButton">
-                <a class="dropdown-item" onclick="ToggleDiv('CreateNotes')" href="#">Create Note</a>
-                <a class="dropdown-item" onclick="ToggleDiv('CreateMessages')" href="#">Create Message</a>
-            </div>
-        </div>
-        
+    <body> 
+    <br>
+        <a href="RequestForm.php">Request Payment</a>
+        <br>
+        <a href="ContactForm.php">Need some assistance? Contact us here!</a>
+        <br>
         <form id="CreateNotes" name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
 
             <textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea>
@@ -34,10 +29,6 @@
             <input type="submit" onClick="addTextHTML();" value="Save As HTML">
             <input type="submit" onClick="addTexttxt();" value="Save As TXT">
         </form>
-        <a href="RequestForm.php">Request Payment</a>
-        <br>
-        <a href="ContactForm.php">Need some assistance? Contact us here!</a>
-        <br>
 
     </body>
     <!-- JS, Popper.js, and jQuery -->
