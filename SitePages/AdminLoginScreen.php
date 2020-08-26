@@ -11,16 +11,14 @@
 
     </head>
     <body>     
-        <form action="AccountLogin.php" method="post">
+        <form action="AdminLogin.php" method="post">
             <p>Admin Login</p>
-            <input id="username" class="user-name" type="text" value="" placeholder="Username" name="logusername" required>
-            <input id="password" class="pass-word" type="password" value="" placeholder="Password" name="logpassword" required>
+            <input id="username" class="user-name" type="text" value="" placeholder="Username" name="admusername" required>
+            <input id="password" class="pass-word" type="password" value="" placeholder="Password" name="admpassword" required>
             <input class="btn btn-dark" type="submit" name="submit" value="Login">
         </form>
 
-        <a href="AccountRegistration.php">Don't have an account? Register here!</a>
-        <br>
-        <a href="AdminLoginScreen.php">Have an admin account? Login here!</a>
+        <a href="LoginScreen.php">Back to user login.</a>
 
 
         

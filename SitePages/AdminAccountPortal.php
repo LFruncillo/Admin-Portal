@@ -38,6 +38,9 @@
         <br>
         <a href="ContactForm.php">Need some assistance? Contact us here!</a>
         <br>
+        <form action="AdminAccess.php" method="post">
+            <input class="btn btn-dark" type="submit" name="Go" value="Control Panel">
+        </form>
 
     </body>
     <!-- JS, Popper.js, and jQuery -->
