@@ -2,6 +2,7 @@
     location.href="LoginScreen.html";
   }
 
+  /* Toggles password visibility on forms */
   function TogglePassword() {
     var x = document.getElementById("password") && document.getElementById("regpassword");
     if (x.type === "password") {
@@ -11,6 +12,7 @@
     }
   }
 
+  /* Creates and Downloads txt file */
 function download(filename, text) {
   var pom = document.createElement('a');
   pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 

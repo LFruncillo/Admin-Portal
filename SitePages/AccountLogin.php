@@ -4,10 +4,12 @@ include_once 'database.php';
 if(isset($_POST['submit']))
 {
 
+/* Checks whether the inputs are empty */
 if(empty($_POST["logusername"]) || empty($_POST["logpassword"])) 
 	{
 		echo 'Both fields are required.'; 
 	} else {
+		/* Values to be selected from database and password verification for logging in */
 		$username = mysqli_real_escape_string($conn, $_POST["logusername"]);
 		$password = mysqli_real_escape_string($conn, $_POST["logpassword"]);
 		$query = "SELECT * FROM accountinfo WHERE username = '$username'"; 

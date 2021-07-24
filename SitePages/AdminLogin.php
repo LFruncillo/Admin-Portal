@@ -4,10 +4,12 @@ include_once 'database.php';
 if(isset($_POST['submit']))
 {
 
+/* Checks if inputs are empty */
 if(empty($_POST["admusername"]) || empty($_POST["admpassword"])) 
 	{
 		echo 'Both fields are required.'; 
 	} else {
+		/* Values to be selected from database and password verification for logging in. */
 		$username = mysqli_real_escape_string($conn, $_POST["admusername"]);
 		$password = mysqli_real_escape_string($conn, $_POST["admpassword"]);
 		$query = "SELECT * FROM accountinfo WHERE type = 'admin'"; 
